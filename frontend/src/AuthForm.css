@@ -1,0 +1,148 @@
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.auth-card {
+  background: #1e1e30;
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid #2a2a40;
+}
+
+.auth-card-wide {
+  max-width: 680px;
+}
+
+.auth-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e94560;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.auth-card h2 {
+  color: #ffffff;
+  margin: 0 0 0.3rem;
+  font-size: 1.5rem;
+}
+
+.auth-sub {
+  color: #7070a0;
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.auth-card label {
+  color: #a0a0c0;
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+  display: block;
+}
+
+.auth-card input,
+.auth-card select {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  background: #12121e;
+  border: 1px solid #2a2a45;
+  border-radius: 8px;
+  color: #e0e0f0;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.auth-card input:focus,
+.auth-card select:focus {
+  border-color: #e94560;
+}
+
+.auth-card select option {
+  background: #1e1e30;
+}
+
+.auth-btn {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: #e94560;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.auth-btn:hover:not(:disabled) {
+  background: #c73652;
+}
+
+.auth-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-error {
+  background: rgba(233, 69, 96, 0.15);
+  border: 1px solid #e94560;
+  color: #e94560;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.auth-success {
+  background: rgba(46, 213, 115, 0.15);
+  border: 1px solid #2ed573;
+  color: #2ed573;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.auth-switch {
+  text-align: center;
+  color: #7070a0;
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+}
+
+.auth-switch a {
+  color: #e94560;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

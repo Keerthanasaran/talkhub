@@ -1,0 +1,135 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.modal-card {
+  background: rgba(255,255,255,0.04);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  border: 1px solid rgba(168,85,247,0.2);
+  box-shadow: 0 0 40px rgba(168,85,247,0.1);
+  backdrop-filter: blur(16px);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #7070a0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: #a855f7;
+}
+
+.modal-card h2 {
+  color: #ffffff;
+  margin: 0 0 0.8rem;
+  font-size: 1.3rem;
+  background: linear-gradient(90deg, #a855f7, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modal-room-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(168,85,247,0.15);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.modal-room-name {
+  color: #a855f7;
+  font-weight: 600;
+}
+
+.modal-room-cap {
+  color: #7070a0;
+  font-size: 0.9rem;
+}
+
+.modal-card label {
+  display: block;
+  color: #a0a0c0;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0.8rem;
+}
+
+.modal-card input {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(168,85,247,0.25);
+  border-radius: 8px;
+  color: #e0e0f0;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.modal-card input:focus {
+  border-color: #a855f7;
+}
+
+.modal-time-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.modal-time-row > div {
+  flex: 1;
+}
+
+.modal-error {
+  background: rgba(239,68,68,0.1);
+  border: 1px solid rgba(239,68,68,0.4);
+  color: #f87171;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.modal-btn {
+  margin-top: 1.2rem;
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-btn:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.modal-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

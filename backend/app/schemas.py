@@ -20,6 +20,11 @@ class TokenResponse(BaseModel):
     employee_name: str
 
 # --- Rooms ---
+class RoomCreate(BaseModel):
+    name: str
+    capacity: int
+    image_url: str = ""
+
 class RoomResponse(BaseModel):
     id: int
     name: str
