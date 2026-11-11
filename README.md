@@ -1,6 +1,10 @@
 # TalkHub — Smart Meeting Room Booking System
 
 <p align="center">
+  <img src="frontend/src/logo.png" alt="TalkHub Logo" width="120" height="120" style="border-radius: 20px"/>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python"/>
   <img src="https://img.shields.io/badge/FastAPI-Latest-green?style=for-the-badge&logo=fastapi"/>
   <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react"/>
